@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# MLflow tracking
+mlruns/
+
+# Local MLflow database
+mlflow.db
+
+# Logs
+*.log
