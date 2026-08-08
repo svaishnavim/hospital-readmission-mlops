@@ -1,0 +1,11 @@
+{
+    "feature_drift": {
+        "number_of_drifted_columns": 33.0,
+        "number_of_columns": 45,
+        "dataset_drift": null
+    },
+    "prediction_drift": {
+        "psi": 2.5341,
+        "interpretation": "Significant prediction drift"
+    }
+}

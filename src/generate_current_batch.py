@@ -23,7 +23,7 @@ def main(n=5000, seed=cfg.RANDOM_STATE):
     cur["time_in_hospital"] = (cur["time_in_hospital"] + rng.integers(1, 4, len(cur))).clip(1, 14)
     cur["num_medications"] = (cur["num_medications"] * rng.normal(1.25, 0.1, len(cur))).round().clip(1, 81)
     cur["number_inpatient"] = (cur["number_inpatient"] + rng.integers(0, 2, len(cur)))
-    cur["age"] = (cur["age"] + 10).clip(5, 95)                 # older skew
+    cur["age_midpoint"] = (cur["age_midpoint"] + 10).clip(5, 95)               # older skew
     cur["service_utilization"] = (cur["number_outpatient"]
                                   + cur["number_emergency"] + cur["number_inpatient"])
     # shift diagnosis mix toward Circulatory
